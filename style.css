@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to right, #a0a0a0, #000000);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.app__navbar {
+  background: linear-gradient(to right, #a0a0a0, #000000);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fixe la navbar en haut */
+    top: 0; /* Position tout en haut */
+    left: 0px; /* Décalage à gauche de 20px */
+    z-index: 1000; /* S'assure que la navbar reste au-dessus des autres éléments */
+    height: 80px; /* Hauteur fixe pour la navbar */
+}
+
+/* Ajouter un espace pour le contenu sous la navbar */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px); /* Soustrait la hauteur de la navbar */
+    margin-top: 80px; /* Pour la navbar fixed */
+}
+  
+.form-box {
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+.form-box.active {
+    display: block;
+}
+h2 {
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+input,select {
+    width: 100%;
+    padding: 12px;
+    background: #eee;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background: #7494ec;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+  
+button:hover {
+    background: #6884d3;
+}
+p {
+    font-size: 14.5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+  
+p a {
+    color: #7494ec;
+    text-decoration: none;
+}
+  
+p a:hover {
+    text-decoration: underline;
+}
+  
+.error-message{
+    padding: 12px;
+    background: #f8d7da;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #a42834;
+    margin-bottom: 20px;
+}
+h1 {
+    font-size: 50px;
+}
+
+span {
+    color: #7491ec;
+}
+
+.box p {
+    font-size: 22px;
+}
+
+.box button {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.app__navbar-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 40px;
+  margin-top: 13px;
+}
+
+.app__navbar-logo img {
+  width: 85px;
+}
+.app__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ list-style: none;
+ margin-left: -110px;
+}
+
+.app__navbar-links li {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+.app__navbar-links li a {
+  font-family: 'Times New Roman', Times, serif;
+  font-size:17px ;
+  text-decoration: none;
+  color: white;
+}
+
+.app__navbar-links li a:hover {
+  text-decoration: none;
+  color: #aaaaaa;
+}
+.app__navbar-login {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 40px;
+  
+}
+.app__navbar-login button {
+  background-color: #000000; 
+  color: white; 
+  padding: 12px 20px;
+  font-size: 16px; 
+  font-weight: bold; 
+  border: none; 
+  border-radius: 8px; /* Coins arrondis */
+  cursor: pointer; 
+ 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  
+}
+.app__navbar-login button:hover {
+  background-color:#f7be37; }
